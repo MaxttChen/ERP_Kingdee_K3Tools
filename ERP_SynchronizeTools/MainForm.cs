@@ -84,7 +84,6 @@ where IsFinish = 0
             timer.Enabled = true;
             timer.Start();
 
-
         }
     }
 }

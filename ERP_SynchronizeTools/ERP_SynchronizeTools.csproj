@@ -125,5 +125,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SQLSERVER_TRIGGER\00-同步表.sql" />
+    <Content Include="SQLSERVER_TRIGGER\00-同步表LOG.sql" />
+    <Content Include="SQLSERVER_TRIGGER\01-物料禁用.sql" />
+    <Content Include="SQLSERVER_TRIGGER\02-物料新增、修改.sql" />
+    <Content Include="SQLSERVER_TRIGGER\03-物料组同步.sql" />
+    <Content Include="SQLSERVER_TRIGGER\03-项目号增改删.sql" />
+    <Content Include="SQLSERVER_TRIGGER\03-项目号禁用.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
