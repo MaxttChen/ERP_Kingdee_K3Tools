@@ -28,11 +28,19 @@ namespace ERP_SynchronizeTools
             btnStop.Click += BtnStop_Click;
             btnClearError.Click += BtnClearError_Click;
 
+            btnTest.Click += BtnTest_Click;
+
             timer.Tick += Timer_Tick;
 
             syc = new SynchronizeClazz();
 
             //gView.DataSource = syc.dt_error;
+        }
+
+        private void BtnTest_Click(object sender, EventArgs e)
+        {
+            Form testFrm = new TestFrm();
+            testFrm.Show();
         }
 
         //清除错误信息

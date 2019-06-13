@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTest = new System.Windows.Forms.Button();
             this.txtTimerCount = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClearError = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
+            this.splitContainer1.Panel1.Controls.Add(this.btnTest);
             this.splitContainer1.Panel1.Controls.Add(this.txtTimerCount);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.btnClearError);
@@ -83,14 +83,14 @@
             this.splitContainer1.SplitterDistance = 92;
             this.splitContainer1.TabIndex = 0;
             // 
-            // button1
+            // btnTest
             // 
-            this.button1.Location = new System.Drawing.Point(396, 65);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "单向调试";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTest.Location = new System.Drawing.Point(396, 65);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(75, 23);
+            this.btnTest.TabIndex = 10;
+            this.btnTest.Text = "单向调试";
+            this.btnTest.UseVisualStyleBackColor = true;
             // 
             // txtTimerCount
             // 
@@ -248,7 +248,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox txtTimerCount;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.DataGridView gView;
     }
 }
