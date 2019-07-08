@@ -90,10 +90,13 @@ namespace ERP_SynchronizeTools
                 urlModel = urlModel.Replace("ItemClass3003", "ItemClass3002");
             }
 
+
             string url = urlModel + Token.getToken();
             string httpResponse = string.Empty;
             byte[] data = System.Text.Encoding.UTF8.GetBytes(jsonText);
             bool flag = HttpHelper.HttpPost(url, data, out httpResponse, 6000);
+
+
             JObject jo = new JObject();
             try
             {

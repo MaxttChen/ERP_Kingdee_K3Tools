@@ -14,7 +14,7 @@ namespace ERP_SynchronizeTools
 
         System.Windows.Forms.Timer timer = new Timer();
         SynchronizeClazz syc;
-        
+        int i;
 
         public MainForm()
         {
@@ -64,10 +64,14 @@ where IsFinish = 0
             
             syc.SendData(sendTable);
 
-            //if (syc.dt_error.Rows.Count > 0)
-            //{
-            //    picErrorStatus.BackColor = Color.Red;
-            //}
+            //同步差异物料组及物料号
+            if (i >= 240)
+            {
+                SnychronizeError();
+                i = 0;
+            }
+
+            i++;
         }
 
         //停止同步
@@ -91,7 +95,14 @@ where IsFinish = 0
             timer.Interval = Convert.ToInt32(txtTimerCount.Text) * 1000;
             timer.Enabled = true;
             timer.Start();
+            i = 0;
+        }
 
+        //同步差异物料组及物料号
+        private void SnychronizeError()
+        {
+            string sql = @"EXEC TESTDB.DBO.Snychronize_error";
+            DBCONN.Query(sql);
         }
     }
 }

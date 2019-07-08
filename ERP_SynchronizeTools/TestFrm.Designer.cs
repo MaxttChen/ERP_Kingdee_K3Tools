@@ -40,6 +40,9 @@
             this.btnPost = new System.Windows.Forms.Button();
             this.txtOperate = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtAuthod = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnCreateToken = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -144,11 +147,39 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "操作";
             // 
+            // txtAuthod
+            // 
+            this.txtAuthod.Location = new System.Drawing.Point(518, 12);
+            this.txtAuthod.Name = "txtAuthod";
+            this.txtAuthod.Size = new System.Drawing.Size(365, 21);
+            this.txtAuthod.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(471, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 12);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "授权码";
+            // 
+            // btnCreateToken
+            // 
+            this.btnCreateToken.Location = new System.Drawing.Point(518, 39);
+            this.btnCreateToken.Name = "btnCreateToken";
+            this.btnCreateToken.Size = new System.Drawing.Size(75, 23);
+            this.btnCreateToken.TabIndex = 17;
+            this.btnCreateToken.Text = "创建TOKEN";
+            this.btnCreateToken.UseVisualStyleBackColor = true;
+            // 
             // TestFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 505);
+            this.Controls.Add(this.btnCreateToken);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtAuthod);
             this.Controls.Add(this.txtOperate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnPost);
@@ -182,5 +213,8 @@
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.TextBox txtOperate;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtAuthod;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnCreateToken;
     }
 }

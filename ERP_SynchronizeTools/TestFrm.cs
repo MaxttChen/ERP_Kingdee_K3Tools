@@ -20,10 +20,16 @@ namespace ERP_SynchronizeTools
             InitializeComponent();
             btnGet.Click += BtnGet_Click;
             btnPost.Click += BtnPost_Click;
+            btnCreateToken.Click += BtnCreateToken_Click;
 
             txtUrl.Text = @"http://193.1.11.159/K3API";
-
+            txtAuthod.Text = @"9c1f17bc02ee5aa47c3329918a5b886403248862c7a8dae3";
             testToken = new TokenClazz(txtUrl.Text, "测试账套", "9c1f17bc02ee5aa47c3329918a5b886403248862c7a8dae3");
+        }
+
+        private void BtnCreateToken_Click(object sender, EventArgs e)
+        {
+            testToken = new TokenClazz(txtUrl.Text, "测试账套", txtAuthod.Text);
         }
 
         //Post
